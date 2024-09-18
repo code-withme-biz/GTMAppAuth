@@ -21,6 +21,9 @@ requests with AppAuth.
   s.prefix_header_file = false
   s.source_files = "GTMAppAuth/Sources/**/*.{h,m}",
   s.public_header_files = "GTMAppAuth/Sources/Public/GTMAppAuth/*.h"
+  s.resource_bundles = {
+     "GTMAppAuth_Privacy" => "GTMAppAuth/Sources/Resources/PrivacyInfo.xcprivacy"
+  }
   s.requires_arc = true
 
   s.ios.deployment_target = "9.0"

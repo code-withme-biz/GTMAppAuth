@@ -43,7 +43,8 @@ let package = Package(
                 "AppAuthCore"
             ],
             path: "GTMAppAuth/Sources",
-            publicHeadersPath: "Public",
+            resources: [.copy("Resources/PrviacyInfo.xcprivacy")],
+	    publicHeadersPath: "Public",
 	    cSettings: [
                 .headerSearchPath("../../"),
             ],
